@@ -76,6 +76,7 @@
                     </fieldset>
 
                     <fieldset class="address">
+
                         <legend>Endereço Residencial</legend>
 
                         <div class="input-wrapper">
@@ -104,6 +105,54 @@
                                 <label for="state">Estado</label>
                                 <input type="text" name="state" value="SP" id="state" disabled>
                             </div>
+                        </div>
+                    </fieldset>
+
+
+                    <fieldset class="gardian">
+                        <legend>Informações do Responsável</legend>
+                        <div class="input-wrapper">
+                            <label for="gardian">Nome do responsável</label>
+                            <input type="text" name="gardian" id="gardian">
+                            <small>Principai responsável legal e contao de emergência</small>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" name="phone" id="phone" placeholder="(10) 9 8765-4321">
+                        </div>
+
+                        <div class="inpur-wrapper">
+                            <label for="mail">E-mail</label>
+                            <input type="email" name="mail" id="mail" required>
+
+                            <div class="error">
+                                <img src="/assets/icons/alert-circle.svg" alt="ìcone de alerta">
+                                <span>Insira um e-mail válido</span>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="enroll-options">
+                        <legend>Opções de matrícula</legend>
+
+                        <div class="input-wrapper">
+                            <label>Selecione o turno de estudo</label>
+
+                            <div class="radio-wrapper">
+                                <div class="radio-inner">
+                                    <div class="radio-image"></div>
+                                    <input type="radio" name="study-shift" value="morning" id="morning">
+                                    <img src="/assets/icons/sun-cloud-02.svg" alt="ìcone de sol entre a nuvem">
+                                    <label for="morning">Manhã</label>
+                                </div>
+                            </div>
+                            
+                                <div class="radio-inner">
+                                    <div class="radio-image"></div>
+                                    <input type="radio" name="study-shift" value="evening" id="evening">
+                                    <img src="/assets/icons/sun-02.svg" alt="ìcone de sol entre a nuvem">
+                                    <label for="evening">Tarde</label>
+                                </div>
                         </div>
                     </fieldset>
                 </form>
