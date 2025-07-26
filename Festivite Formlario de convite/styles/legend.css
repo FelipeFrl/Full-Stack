@@ -1,0 +1,14 @@
+legend{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .75rem;
+   color:var(--text-heading); 
+   font: var(--heading-sm);
+
+   margin-bottom: 1.5rem;
+
+   & svg{
+    color: var(--input-placeholder);
+   }
+}

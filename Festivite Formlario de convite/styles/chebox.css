@@ -1,0 +1,121 @@
+
+
+
+.switch{
+    position: relative;
+    display: flex;
+    width: 4rem;
+    height: 2rem;
+
+    margin-top: 20px;
+    display: flex;
+    gap: 43px;
+    align-items: center;
+
+    & input{
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+}
+
+.slider{
+    position: absolute;
+    inset: 0;
+    transition: .4s;
+    background-color: #1C1F21;
+    border-radius: 2rem;
+
+    &::before{
+        position: absolute;
+        content: "";
+        width: 1.5rem;
+        height: 1.5rem;
+        left: .25rem;
+        bottom: .25rem;
+        background-color: var(--input-stroke);
+        transition: .4s;
+        border-radius: 50%;
+    }
+}
+
+
+input:checked + .slider{
+    background-color: #59B2FF;
+}
+
+input:checked + .slider::before{
+
+    background-color: #ffff;
+    transform: translateX(32px);
+}
+
+
+
+.switchtoggle .description{
+
+    font: var(--body-sm);
+    color: var(--text-heading);
+    margin-left: 2.5rem;
+}
+
+
+
+.terms{
+    display: flex;
+
+    margin-top: 40px;
+
+}
+
+
+.items input[type="checkbox"]{
+    display: none;
+
+  
+}
+
+
+
+
+.items{
+    display: flex;
+    flex-direction: column;
+    font: var(--body-sm);
+   
+}
+
+
+
+
+label span{
+    color:#59B2FF;
+    text-decoration-line: underline;
+    text-decoration-color:#919496 ;
+    font: var(--body-semi);
+}
+
+.items input +label::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    border: 1px solid #363B40;
+    display: inline-block;
+    margin-right: 12px;
+    margin-bottom: 8.5px;
+    vertical-align: middle;
+    margin-top: 4px;
+    border-radius: 4px;
+}
+
+.items input:checked + label::before{
+    border-color: #59B2FF;
+    
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM1OWIyZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1jaGVjay1pY29uIGx1Y2lkZS1jaGVjayI+PHBhdGggZD0iTTIwIDYgOSAxN2wtNS01Ii8+PC9zdmc+);
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+}
+
+
